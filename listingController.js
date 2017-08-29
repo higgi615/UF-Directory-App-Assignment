@@ -46,6 +46,8 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
          This function shows the details of each listing.
       */
 
+      // Set detailed info equal to the element clicked on
+      $scope.detailedInfo = $scope.listings[index];
 
 
     };

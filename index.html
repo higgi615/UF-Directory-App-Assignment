@@ -47,7 +47,7 @@
                   </td>
                   <td>
                     <input type="button" value="Details" class="btn btn-secondary"
-                    ng-click="showDetails(entries.name)"/>
+                    ng-click="showDetails($index)"/>
                   </td>
                 </tr>
             </table>
@@ -117,8 +117,13 @@
 
               Include a way to display detailed information about an individual listing:
                    * consider how to use ng-click within the the table to implement this feature
-
              -->
+              <p>Code: {{ detailedInfo.code }}</p>
+              <p>Name: {{ detailedInfo.name }}</p>
+              <p>Latitude: {{ detailedInfo.latitude }}</p>
+              <p>Longitude: {{ detailedInfo.longitude }}</p>
+              <p>Address: {{ detailedInfo.address }}</p>
+
           </div>
         </div>
       </div>
