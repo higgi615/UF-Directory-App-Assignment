@@ -80,7 +80,7 @@
 
 
        <div class = "col-sm-10">
-          <input type = "text" ng-model="newListing.latitude" class = "form-control" id = "lat" placeholder = "Latitude">
+          <input type = "text" ng-model="newListing.coordinates.latitude" class = "form-control" id = "lat" placeholder = "Latitude">
        </div>
        </div>
 
@@ -89,7 +89,7 @@
 
 
        <div class = "col-sm-10">
-          <input type = "text" ng-model="newListing.longitude" class = "form-control" id = "long" placeholder = "Longitude">
+          <input type = "text" ng-model="newListing.coordinates.longitude" class = "form-control" id = "long" placeholder = "Longitude">
        </div>
         </div>
 
@@ -120,8 +120,8 @@
              -->
               <p>Code: {{ detailedInfo.code }}</p>
               <p>Name: {{ detailedInfo.name }}</p>
-              <p>Latitude: {{ detailedInfo.latitude }}</p>
-              <p>Longitude: {{ detailedInfo.longitude }}</p>
+              <p>Latitude: {{ detailedInfo.coordinates.latitude }}</p>
+              <p>Longitude: {{ detailedInfo.coordinates.longitude }}</p>
               <p>Address: {{ detailedInfo.address }}</p>
 
           </div>
