@@ -1,10 +1,10 @@
-//This file holds any configuration variables we may need 
+//This file holds any configuration variables we may need
 //'config.js' is ignored by git to protect sensitive information, such as your database's username and password
 //copy this file's contents to another file 'config.js' and store your MongoLab uri there
 
 module.exports = {
   db: {
-    uri: '', //place the URI of your mongo database here.
+    uri: 'mongodb://higgi615:B3tt3r15@ds161913.mlab.com:61913/bootcamp_assignment3', //place the URI of your mongo database here.
   }
 };
 
