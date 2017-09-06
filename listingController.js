@@ -40,14 +40,25 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
         $scope.listings.splice(index, 1);
       }
     };
-    $scope.showDetails = function(index) {
+    $scope.showDetails = function(name) {
 
       /*
          This function shows the details of each listing.
       */
-
       // Set detailed info equal to the element clicked on
-      $scope.detailedInfo = $scope.listings[index];
+        var index = -1;
+        var entries = eval($scope.listings);
+
+        for(var i = 0; i < entries.length; i++) { // loop through list of names
+            if(entries[i].name === name) {
+                index = i;
+                break;
+            }
+        }
+
+        if(index != -1) { // If we found the name, delete it
+            $scope.detailedInfo = $scope.listings[index];
+        }
 
 
     };
