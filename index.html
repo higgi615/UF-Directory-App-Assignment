@@ -46,7 +46,7 @@
                     ng-click="deleteListing(entries.name)"/>
                   </td>
                   <td>
-                    <input type="button" value="Details" class="btn btn-secondary"
+                    <input type="button" value="Details" class="btn btn-success"
                     ng-click="showDetails($index)"/>
                   </td>
                 </tr>
@@ -57,9 +57,12 @@
               Write an HTML form that adds new listings to the directory
 
             -->
-  <form class = "form-horizontal" role = "form">
+  <form class = "form-horizontal" id="addNewListing" role = "form">
 
    <div class = "form-group">
+       <div class="title">
+           <label class="title">Add New Listing Below</label>
+       </div>
       <label  class = "col-sm-2 control-label">Code</label>
 
       <div class = "col-sm-10">
@@ -104,7 +107,7 @@
 
        <div class = "form-group">
       <div class = "col-sm-offset-2 col-sm-10">
-         <button type = "submit" ng-click="addListing(newListing)" class = "btn btn-default">Add Listing</button>
+         <button type = "submit" ng-click="addListing(newListing)" class = "btn btn-primary">Add Listing</button>
       </div>
    </div>
  </form>
@@ -118,11 +121,13 @@
               Include a way to display detailed information about an individual listing:
                    * consider how to use ng-click within the the table to implement this feature
              -->
-              <p>Code: {{ detailedInfo.code }}</p>
-              <p>Name: {{ detailedInfo.name }}</p>
-              <p>Latitude: {{ detailedInfo.coordinates.latitude }}</p>
-              <p>Longitude: {{ detailedInfo.coordinates.longitude }}</p>
-              <p>Address: {{ detailedInfo.address }}</p>
+              <div class="displayInfo">
+                  <p>Code: {{ detailedInfo.code }}</p>
+                  <p>Name: {{ detailedInfo.name }}</p>
+                  <p>Latitude: {{ detailedInfo.coordinates.latitude }}</p>
+                  <p>Longitude: {{ detailedInfo.coordinates.longitude }}</p>
+                  <p>Address: {{ detailedInfo.address }}</p>
+              </div>
 
           </div>
         </div>

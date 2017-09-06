@@ -6,3 +6,8 @@
   max-height: 400px;
   overflow: auto;
 }
+
+.displayInfo {
+  color: #2f6fad;
+  font-family: "Big Caslon";
+}
