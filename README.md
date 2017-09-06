@@ -24,7 +24,7 @@ Instructions:
 
 1. Clone the repository
 2. Define your schema in `ListingSchema.js`
-3. Create a `config.js` file (based on `config.example.js`) and add the uri to your MongoLab database.
+3. Create a `config.js` file (based on `config.js`) and add the uri to your MongoLab database.
 3. Ensure your schema passes the tests by running `mocha listing.model.test.js`
 4. Fill out the `JSONtoMongo.js` script to add the listings to your database
 5. Complete the functions in `queries.js`

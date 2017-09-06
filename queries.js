@@ -25,7 +25,7 @@ var findLibraryWest = function() {
        throw err;
      }
 
-     console.log('Library West Data: ' + listing + '\n\n');
+     console.log('\n\nLibrary West Data: ' + listing + '\n\n');
 
    });
 };
